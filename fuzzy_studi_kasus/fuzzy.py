@@ -206,10 +206,13 @@ class Speed(BaseFuzzy):
             return 0
 
 speed = Speed()
+temperature = 20
+pressure = 20
 try:
 	temperature = input("Enter temperature: ")
 	pressure = input("Enter pressure: ")
 except EOFError as e:
     print(end="")
+
 speed_values = speed.calculate_speed(temperature.upper(), pressure.upper())
 speed.graph(temperature.upper(), pressure.upper())
