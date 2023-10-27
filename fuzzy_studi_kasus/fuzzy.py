@@ -214,5 +214,5 @@ try:
 except EOFError as e:
     print(end="")
 
-speed_values = speed.calculate_speed(temperature.upper(), pressure.upper())
-speed.graph(temperature.upper(), pressure.upper())
+speed_values = speed.calculate_speed(temperature, pressure)
+speed.graph(temperature, pressure)
