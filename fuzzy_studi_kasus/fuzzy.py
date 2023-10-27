@@ -189,7 +189,7 @@ class Speed(BaseFuzzy):
         plt.plot(x, slow_values, label='Slow')
         plt.plot(x, steady_values, label='Steady')
         plt.plot(x, fast_values, label='Fast')
-        plt.title('Speed Output for Temperature: ' + temperature + ' and Pressure: ' + pressure)
+        plt.title('Speed Output for Temperature: ' + str(temperature) + ' and Pressure: ' + str(pressure))
         plt.legend()
         plt.show()
         
